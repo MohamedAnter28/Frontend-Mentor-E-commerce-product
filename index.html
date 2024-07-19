@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- css Style -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="lightbox"></div>
+  <div class="show-img">
+    <i class="fa-solid fa-xmark close main-close"></i>
+    <div><img src="./icon-previous.svg" alt="icon-previous" class="prev"><img src="./image-product-1.jpg" alt="" class="main-img"><img src="./icon-next.svg" alt="icon-next" class="next"></div>
+    <div class="thumbnails">
+      <img src="./image-product-1-thumbnail.jpg" alt="image-product-1-thumbnail" class="img-thumbnail up" data-src="./image-product-1-thumbnail.jpg">
+      <img src="./image-product-2-thumbnail.jpg" alt="image-product-2-thumbnail" class="img-thumbnail up" data-src="./image-product-2-thumbnail.jpg">
+      <img src="./image-product-3-thumbnail.jpg" alt="image-product-3-thumbnail" class="img-thumbnail up" data-src="
+      ./image-product-3-thumbnail.jpg">
+      <img src="./image-product-4-thumbnail.jpg" alt="image-product-4-thumbnail" class="img-thumbnail up" data-src="./image-product-4-thumbnail.jpg">
+    </div>
+  </div>
+  <div class="navbar">
+    <div class="links">
+      <img src="./icon-hamburger.svg" alt="icon-hamburger" class="res-nav">
+      <div id="logo"><img src="./logo.svg" alt="logo"></div>
+      <ul class="nav">
+        <img src="./icon-close.svg" alt="" class="close">
+        <li><a href="#">Collections</a></li>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="info">
+      <div class="cart">
+        <img src="./icon-cart.svg" alt="cart" class="icon-cart">
+        <div class="count">2</div>
+        <div class="cart-value">
+          <span class="cart-heading">Card</span>
+          <div class="orders">
+            <p class="empty">Your card is empty.</p>
+          </div>
+          <div class="button">
+            <div class="btn">Checkout</div>
+          </div>
+        </div>
+      </div>
+      <img src="./image-avatar.png" alt="avatar"  class="avatar">
+    </div>
+  </div>
+  <div class="container">
+    <div class="col-1">
+      <div class="main-img"><img src="./image-product-1.jpg" alt="image-product-1" class="showslider"></div>
+      <div class="thumbnails main-thumbnails">
+        <img src="./image-product-1-thumbnail.jpg" alt="image-product-1-thumbnail" class="img-thumbnail th">
+        <img src="./image-product-2-thumbnail.jpg" alt="image-product-2-thumbnail" class="img-thumbnail th">
+        <img src="./image-product-3-thumbnail.jpg" alt="image-product-3-thumbnail" class="img-thumbnail th">
+        <img src="./image-product-4-thumbnail.jpg" alt="image-product-4-thumbnail" class="img-thumbnail th">
+      </div>
+    </div>
+    <div class="col-2">
+      <p>Sneaker Company</p>
+      <h1>Fall Limited Edition Sneakers</h1>
+      <p>These low-profile sneakers are your perfect casual wear companion. Featuring a 
+        durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+      <div class="price">
+        <div class="new-price"><div class="productPrice">$125.00</div><div class="dis">50%</div></div>
+        <div class="old-price"><del>$250.00</del></div>
+      </div>
+      <div class="purchase">
+        <div class="counter"><img src="./icon-minus.svg" alt="icon-minus" class="min"><div class="num">0</div><img src="./icon-plus.svg" alt="icon-plus" class="plus"></div>
+        <div class="btn"><img src="./icon-cart.svg" alt="cart">Add to cart</div>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
